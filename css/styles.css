@@ -1,9 +1,69 @@
+/*makes page take up full browser height*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+/*main page styling*/
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: hotpink;
+    border: none;
+    border-style: none;
 }
-h1 {
-    color: greenyellow;
+/*style for headings*/
+h1, h2 {
+    color: yellow;
 }
-p {
+/*style for paragraph and h4 heading*/
+p, h4 {
+    color: #00FFFF;
     text-align: center;
+}
+/*grid conatiner for sections and button*/
+#container {
+    display: grid;/*enable grid layout*/
+    grid-template-columns: 1fr 1fr;/*creates 2 equal width columns*/
+    grid-template-rows: auto auto auto;/*creates 3 rows*/
+    width: 80%;/*conatiner takes up 80% of page width*/
+    margin: auto;/*centers container horizontally*/
+    margin-top: 80px;/*pushes container down from the top of page*/
+}
+/*shared styling for sections*/
+#section1, #section2 {
+    flex: 1;
+    background-color:hotpink;
+    border: 4px solid lavender;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/*styling for section 1*/
+#section1 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    border-radius: 80px;
+    border-style: groove;
+    border-color: chartreuse;
+}
+/*styling for section 2*/
+#section2 {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+    border-radius: 11px;
+    border-style: groove;
+    border-color: chartreuse;
+}
+/*styling for button*/
+#btn {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: flex-end;
+    justify-self: end;
+    font-size: 1rem;
+}
+/*styling for footer*/
+footer {
+    margin-top: auto;
 }

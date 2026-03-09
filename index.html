@@ -7,19 +7,23 @@
     <title>Hey! What's funny?</title>
 </head>
 <body>
-    <h1>Hey! What's funny?</h1>
-    <section id="sect1"></section>
-    <section id="sect2"></section>
-    <br>
+    <section id="container">
+        <div id="section1">
+            <h1>Hey! What's funny?</h1>
+            <h4>You tell me!</h4>
+        </div>
+        <div id="section2">
+            <h2>You've got to be joking.</h2>
+            <p id="jokeText"></p>
+        </div>
+        <section id="button">
+            <button type="submit" id="btn">Click Here</button>
+        </section>
+    </section>
     <hr>
     <footer>
-        <p>APD Assignment: Working With API's</p>
+        <p id="footer">APD Assignment: Working With API's</p>
     </footer>
-    <script>
-console.log = function(msg){
-  document.body.innerHTML += "<pre>" + msg + "</pre>";
-}
-</script>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
